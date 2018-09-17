@@ -1,4 +1,4 @@
-export default class App extends RTCIceCandidate.Component {
+class App extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -15,9 +15,10 @@ export default class App extends RTCIceCandidate.Component {
         event.preventDefault();
         const {searchText} = this.state;
         const url = `https://api.github.com/search/users?q=${searchText}`;
+        console.log(searchText);
         fetch(url)
             .then(response => response.json())
-            .then(responseJson => this.setState({users: reasponseJson.items}));
+            .then(responseJson => this.setState({users: responseJson.items}));
     }
 
     render() {

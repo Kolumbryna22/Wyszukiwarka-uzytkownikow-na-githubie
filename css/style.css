@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  border: 1px solid lightblue;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.gallery-item img {
+  display: block;
+  margin-bottom: 10px;
+}
+.gallery-item a {
+  display: block;
+  font-size: 18px;
+  color: #465a6e;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  padding: 5px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.gallery-item a:hover {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
