@@ -6,16 +6,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UserList = function (_React$Component) {
-    _inherits(UserList, _React$Component);
+var UsersList = function (_React$Component) {
+    _inherits(UsersList, _React$Component);
 
-    function UserList() {
-        _classCallCheck(this, UserList);
+    function UsersList() {
+        _classCallCheck(this, UsersList);
 
-        return _possibleConstructorReturn(this, (UserList.__proto__ || Object.getPrototypeOf(UserList)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (UsersList.__proto__ || Object.getPrototypeOf(UsersList)).apply(this, arguments));
     }
 
-    _createClass(UserList, [{
+    _createClass(UsersList, [{
         key: "render",
         value: function render() {
             return React.createElement(
@@ -33,5 +33,5 @@ var UserList = function (_React$Component) {
         }
     }]);
 
-    return UserList;
+    return UsersList;
 }(React.Component);

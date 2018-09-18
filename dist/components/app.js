@@ -35,7 +35,6 @@ var App = function (_React$Component) {
             var searchText = this.state.searchText;
 
             var url = "https://api.github.com/search/users?q=" + searchText;
-            console.log(searchText);
             fetch(url).then(function (response) {
                 return response.json();
             }).then(function (responseJson) {
@@ -66,9 +65,9 @@ var App = function (_React$Component) {
                         onChange: function onChange(event) {
                             return _this3.onChangeHandle(event);
                         },
-                        value: this.state.users })
+                        value: this.state.searchText })
                 ),
-                React.createElement(UserList, { users: this.state.users })
+                React.createElement(UsersList, { users: this.state.users })
             );
         }
     }]);

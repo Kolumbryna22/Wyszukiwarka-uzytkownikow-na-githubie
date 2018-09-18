@@ -3,7 +3,7 @@ class App extends React.Component {
         super();
         this.state = {
             searchText: '',
-            users: [],
+            users: []
         };
     }
 
@@ -15,7 +15,6 @@ class App extends React.Component {
         event.preventDefault();
         const {searchText} = this.state;
         const url = `https://api.github.com/search/users?q=${searchText}`;
-        console.log(searchText);
         fetch(url)
             .then(response => response.json())
             .then(responseJson => this.setState({users: responseJson.items}));
@@ -30,10 +29,10 @@ class App extends React.Component {
                         type="text" 
                         id="searchText" 
                         onChange={event => this.onChangeHandle(event)} 
-                        value={this.state.users}/>
+                        value={this.state.searchText}/>
                 </form>
-                <UserList users={this.state.users}/>
+                <UsersList users={this.state.users}/>
             </div>
-        )
+        );
     }
 }
