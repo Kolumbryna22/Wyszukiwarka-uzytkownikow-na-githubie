@@ -32,9 +32,11 @@ var App = function (_React$Component) {
             var _this2 = this;
 
             event.preventDefault();
+
             var searchText = this.state.searchText;
 
             var url = "https://api.github.com/search/users?q=" + searchText;
+
             fetch(url).then(function (response) {
                 return response.json();
             }).then(function (responseJson) {

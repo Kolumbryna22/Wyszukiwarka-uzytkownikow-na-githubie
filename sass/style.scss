@@ -2,12 +2,19 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
 form {
     text-align: center;
 }
 
 label {
     display: block;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 24px;
 }
@@ -27,14 +34,16 @@ input {
 }
 
 .gallery-item {
-    border: 1px solid lightblue;
-    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
     margin: 10px;
+    width: 140px;
     text-align: center;
 
     img {
         display: block;
-        margin-bottom: 10px;
+        margin: 0 auto 10px;
     }
 
     a {
@@ -46,6 +55,7 @@ input {
         padding: 5px;
         border-radius: 10px;
         transition-duration: 1s;
+        word-wrap: break-word;
         
         &:hover {
             background-color: white;
