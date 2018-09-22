@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$font: 'Montserrat', sans-serif;
+
 * {
     box-sizing: border-box;
+    font-family: $font;
 }
+
+@mixin button-style($back-color, $color, $radius) {
+    background-color: $back-color;
+    color: $color;
+    border: 2px solid $back-color;
+    border-radius: $radius;
+    cursor: pointer;
+    transition-duration: 0.7s;
+    padding: 15px 40px;
+  
+    &:hover {
+        background-color: $color;
+        border: 2px solid $back-color;
+        color: $back-color;
+    }
+}
+
+$twitter: #4099FF;
+$facebook: #3B5998;
+$google-plus: #DB5A3C;
+$instagram: #5C3D2E;
+$github: #4183C4;
+
 
 body {
     margin: 0;
@@ -61,4 +88,53 @@ input {
             background-color: white;
         }
     }
+}
+
+.twitter {
+    @include button-style($twitter, white, 15px);
+}
+
+.facebook {
+    @include button-style($facebook, white, 15px);
+}
+
+.google-plus {
+    @include button-style($google-plus, white, 15px);
+}
+
+.instagram {
+    @include button-style($instagram, white, 15px);
+}
+
+.github {
+    @include button-style($github, white, 15px);
+}
+
+.twitter,
+.facebook,
+.google-plus,
+.github,
+.instagram {
+    padding: 5px;
+    width: 30px;
+    margin: 3px;
+}
+
+.filters {
+    background-color: white;
+    position: fixed;
+    width: 220px;
+    padding: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 50px;
+}
+
+.container {
+    padding-left: 170px;
+}
+
+.chooseMedia {
+    font-size: 18px;
+
 }

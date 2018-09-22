@@ -52,24 +52,66 @@ var App = function (_React$Component) {
                 "div",
                 null,
                 React.createElement(
-                    "form",
-                    { onSubmit: function onSubmit(event) {
-                            return _this3.onSubmit(event);
-                        } },
+                    "div",
+                    { className: "filters" },
                     React.createElement(
-                        "label",
-                        { htmlFor: "searchText" },
-                        "Search by user name"
+                        "h2",
+                        { className: "chooseMedia" },
+                        "Choose platform"
                     ),
-                    React.createElement("input", {
-                        type: "text",
-                        id: "searchText",
-                        onChange: function onChange(event) {
-                            return _this3.onChangeHandle(event);
-                        },
-                        value: this.state.searchText })
+                    React.createElement(
+                        "div",
+                        { "class": "social-list" },
+                        React.createElement(
+                            "button",
+                            { "class": "twitter" },
+                            React.createElement("i", { "class": "fa fa-twitter" })
+                        ),
+                        React.createElement(
+                            "button",
+                            { "class": "facebook" },
+                            React.createElement("i", { "class": "fa fa-facebook" })
+                        ),
+                        React.createElement(
+                            "button",
+                            { "class": "google-plus" },
+                            React.createElement("i", { "class": "fa fa-google-plus" })
+                        ),
+                        React.createElement(
+                            "button",
+                            { "class": "instagram" },
+                            React.createElement("i", { "class": "fa fa-instagram" })
+                        ),
+                        React.createElement(
+                            "button",
+                            { "class": "github" },
+                            React.createElement("i", { "class": "fa fa-github" })
+                        )
+                    )
                 ),
-                React.createElement(UsersList, { users: this.state.users })
+                React.createElement(
+                    "div",
+                    { className: "container" },
+                    React.createElement(
+                        "form",
+                        { onSubmit: function onSubmit(event) {
+                                return _this3.onSubmit(event);
+                            } },
+                        React.createElement(
+                            "label",
+                            { htmlFor: "searchText" },
+                            "Search by user name"
+                        ),
+                        React.createElement("input", {
+                            type: "text",
+                            id: "searchText",
+                            onChange: function onChange(event) {
+                                return _this3.onChangeHandle(event);
+                            },
+                            value: this.state.searchText })
+                    ),
+                    React.createElement(UsersList, { users: this.state.users })
+                )
             );
         }
     }]);

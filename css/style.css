@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
 
 body {
   margin: 0;
@@ -49,5 +51,94 @@ input {
     word-wrap: break-word; }
     .gallery-item a:hover {
       background-color: white; }
+
+.twitter {
+  background-color: #4099FF;
+  color: white;
+  border: 2px solid #4099FF;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px; }
+  .twitter:hover {
+    background-color: white;
+    border: 2px solid #4099FF;
+    color: #4099FF; }
+
+.facebook {
+  background-color: #3B5998;
+  color: white;
+  border: 2px solid #3B5998;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px; }
+  .facebook:hover {
+    background-color: white;
+    border: 2px solid #3B5998;
+    color: #3B5998; }
+
+.google-plus {
+  background-color: #DB5A3C;
+  color: white;
+  border: 2px solid #DB5A3C;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px; }
+  .google-plus:hover {
+    background-color: white;
+    border: 2px solid #DB5A3C;
+    color: #DB5A3C; }
+
+.instagram {
+  background-color: #5C3D2E;
+  color: white;
+  border: 2px solid #5C3D2E;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px; }
+  .instagram:hover {
+    background-color: white;
+    border: 2px solid #5C3D2E;
+    color: #5C3D2E; }
+
+.github {
+  background-color: #4183C4;
+  color: white;
+  border: 2px solid #4183C4;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  padding: 15px 40px; }
+  .github:hover {
+    background-color: white;
+    border: 2px solid #4183C4;
+    color: #4183C4; }
+
+.twitter,
+.facebook,
+.google-plus,
+.github,
+.instagram {
+  padding: 5px;
+  width: 30px;
+  margin: 3px; }
+
+.filters {
+  background-color: white;
+  position: fixed;
+  width: 220px;
+  padding: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 50px; }
+
+.container {
+  padding-left: 170px; }
+
+.chooseMedia {
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
