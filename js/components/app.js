@@ -25,20 +25,11 @@ class App extends React.Component {
 
     showFilters(event) {
         event.preventDefault();
-        
-        console.log("I'm here!!!!!");
 
-        this.state.isActive = true;
-        console.log(this.state.isActive);
+        this.setState({isActive: true});
     }
 
     render() {
-        let showAdd = 'specifiedFilter';
-
-        if (this.state.isActive) {
-            showAdd += ' show';
-        }
-
         return (
             <div>
                 <div className="filters">
@@ -60,7 +51,7 @@ class App extends React.Component {
                             <i className="fa fa-github"></i>
                         </button>
                     </div>
-                    <div className={showAdd}>
+                    <div className={this.state.isActive ? 'show specifiedFilter':'specifiedFilter'}>
                         <h2>Filter by:</h2>
                         <p>Repositories</p>
                         <p>Stars</p>
