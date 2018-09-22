@@ -3,7 +3,8 @@ class App extends React.Component {
         super();
         this.state = {
             searchText: '',
-            users: []
+            users: [],
+            isActive: false
         };
     }
 
@@ -22,7 +23,22 @@ class App extends React.Component {
             .then(responseJson => this.setState({users: responseJson.items}));
     }
 
+    showFilters(event) {
+        event.preventDefault();
+        
+        console.log("I'm here!!!!!");
+
+        this.state.isActive = true;
+        console.log(this.state.isActive);
+    }
+
     render() {
+        let showAdd = 'specifiedFilter';
+
+        if (this.state.isActive) {
+            showAdd += ' show';
+        }
+
         return (
             <div>
                 <div className="filters">
@@ -40,11 +56,11 @@ class App extends React.Component {
                         <button className="instagram">
                             <i className="fa fa-instagram"></i>
                         </button>
-                        <button className="github">
+                        <button className="github" onClick={event => this.showFilters(event)}>
                             <i className="fa fa-github"></i>
                         </button>
                     </div>
-                    <div className="specifiedFilter">
+                    <div className={showAdd}>
                         <h2>Filter by:</h2>
                         <p>Repositories</p>
                         <p>Stars</p>

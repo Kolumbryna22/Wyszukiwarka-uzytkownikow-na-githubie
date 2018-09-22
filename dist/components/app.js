@@ -16,18 +16,19 @@ var App = function (_React$Component) {
 
         _this.state = {
             searchText: '',
-            users: []
+            users: [],
+            isActive: false
         };
         return _this;
     }
 
     _createClass(App, [{
-        key: "onChangeHandle",
+        key: 'onChangeHandle',
         value: function onChangeHandle(event) {
             this.setState({ searchText: event.target.value });
         }
     }, {
-        key: "onSubmit",
+        key: 'onSubmit',
         value: function onSubmit(event) {
             var _this2 = this;
 
@@ -35,7 +36,7 @@ var App = function (_React$Component) {
 
             var searchText = this.state.searchText;
 
-            var url = "https://api.github.com/search/users?q=" + searchText;
+            var url = 'https://api.github.com/search/users?q=' + searchText;
 
             fetch(url).then(function (response) {
                 return response.json();
@@ -44,96 +45,114 @@ var App = function (_React$Component) {
             });
         }
     }, {
-        key: "render",
+        key: 'showFilters',
+        value: function showFilters(event) {
+            event.preventDefault();
+
+            console.log("I'm here!!!!!");
+
+            this.state.isActive = true;
+            console.log(this.state.isActive);
+        }
+    }, {
+        key: 'render',
         value: function render() {
             var _this3 = this;
 
+            var showAdd = 'specifiedFilter';
+
+            if (this.state.isActive) {
+                showAdd += ' show';
+            }
+
             return React.createElement(
-                "div",
+                'div',
                 null,
                 React.createElement(
-                    "div",
-                    { className: "filters" },
+                    'div',
+                    { className: 'filters' },
                     React.createElement(
-                        "h2",
-                        { className: "chooseMedia" },
-                        "Choose platform"
+                        'h2',
+                        { className: 'chooseMedia' },
+                        'Choose platform'
                     ),
                     React.createElement(
-                        "div",
-                        { className: "social-list" },
+                        'div',
+                        { className: 'social-list' },
                         React.createElement(
-                            "button",
-                            { className: "twitter" },
-                            React.createElement("i", { className: "fa fa-twitter" })
+                            'button',
+                            { className: 'twitter' },
+                            React.createElement('i', { className: 'fa fa-twitter' })
                         ),
                         React.createElement(
-                            "button",
-                            { className: "facebook" },
-                            React.createElement("i", { className: "fa fa-facebook" })
+                            'button',
+                            { className: 'facebook' },
+                            React.createElement('i', { className: 'fa fa-facebook' })
                         ),
                         React.createElement(
-                            "button",
-                            { className: "google-plus" },
-                            React.createElement("i", { className: "fa fa-google-plus" })
+                            'button',
+                            { className: 'google-plus' },
+                            React.createElement('i', { className: 'fa fa-google-plus' })
                         ),
                         React.createElement(
-                            "button",
-                            { className: "instagram" },
-                            React.createElement("i", { className: "fa fa-instagram" })
+                            'button',
+                            { className: 'instagram' },
+                            React.createElement('i', { className: 'fa fa-instagram' })
                         ),
                         React.createElement(
-                            "button",
-                            { className: "github" },
-                            React.createElement("i", { className: "fa fa-github" })
+                            'button',
+                            { className: 'github', onClick: function onClick(event) {
+                                    return _this3.showFilters(event);
+                                } },
+                            React.createElement('i', { className: 'fa fa-github' })
                         )
                     ),
                     React.createElement(
-                        "div",
-                        { className: "specifiedFilter" },
+                        'div',
+                        { className: showAdd },
                         React.createElement(
-                            "h2",
+                            'h2',
                             null,
-                            "Filter by:"
+                            'Filter by:'
                         ),
                         React.createElement(
-                            "p",
+                            'p',
                             null,
-                            "Repositories"
+                            'Repositories'
                         ),
                         React.createElement(
-                            "p",
+                            'p',
                             null,
-                            "Stars"
+                            'Stars'
                         ),
                         React.createElement(
-                            "p",
+                            'p',
                             null,
-                            "Followers"
+                            'Followers'
                         ),
                         React.createElement(
-                            "p",
+                            'p',
                             null,
-                            "Following"
+                            'Following'
                         )
                     )
                 ),
                 React.createElement(
-                    "div",
-                    { className: "container" },
+                    'div',
+                    { className: 'container' },
                     React.createElement(
-                        "form",
+                        'form',
                         { onSubmit: function onSubmit(event) {
                                 return _this3.onSubmit(event);
                             } },
                         React.createElement(
-                            "label",
-                            { htmlFor: "searchText" },
-                            "Search by user name"
+                            'label',
+                            { htmlFor: 'searchText' },
+                            'Search by user name'
                         ),
-                        React.createElement("input", {
-                            type: "text",
-                            id: "searchText",
+                        React.createElement('input', {
+                            type: 'text',
+                            id: 'searchText',
                             onChange: function onChange(event) {
                                 return _this3.onChangeHandle(event);
                             },

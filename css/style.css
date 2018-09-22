@@ -154,4 +154,7 @@ input {
     .specifiedFilter p:hover {
       background-color: white; }
 
+.show {
+  display: block !important; }
+
 /*# sourceMappingURL=style.css.map */
