@@ -27,22 +27,29 @@ class App extends React.Component {
             <div>
                 <div className="filters">
                     <h2 className="chooseMedia">Choose platform</h2>
-                    <div class="social-list">
-                        <button class="twitter">
-                            <i class="fa fa-twitter"></i>
+                    <div className="social-list">
+                        <button className="twitter">
+                            <i className="fa fa-twitter"></i>
                         </button>
-                        <button class="facebook">
-                            <i class="fa fa-facebook"></i>
+                        <button className="facebook">
+                            <i className="fa fa-facebook"></i>
                         </button>
-                        <button class="google-plus">
-                            <i class="fa fa-google-plus"></i>
+                        <button className="google-plus">
+                            <i className="fa fa-google-plus"></i>
                         </button>
-                        <button class="instagram">
-                            <i class="fa fa-instagram"></i>
+                        <button className="instagram">
+                            <i className="fa fa-instagram"></i>
                         </button>
-                        <button class="github">
-                            <i class="fa fa-github"></i>
+                        <button className="github">
+                            <i className="fa fa-github"></i>
                         </button>
+                    </div>
+                    <div className="specifiedFilter">
+                        <h2>Filter by:</h2>
+                        <p>Repositories</p>
+                        <p>Stars</p>
+                        <p>Followers</p>
+                        <p>Following</p>
                     </div>
                 </div>
                 <div className="container">

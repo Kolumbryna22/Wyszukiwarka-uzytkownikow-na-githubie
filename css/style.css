@@ -141,4 +141,15 @@ input {
 .chooseMedia {
   font-size: 18px; }
 
+.specifiedFilter p {
+  width: 100%;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: lightblue;
+  transition-duration: 0.5s;
+  cursor: pointer; }
+  .specifiedFilter p:hover {
+    background-color: white; }
+
 /*# sourceMappingURL=style.css.map */

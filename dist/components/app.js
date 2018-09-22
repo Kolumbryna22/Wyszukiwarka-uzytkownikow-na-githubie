@@ -61,31 +61,60 @@ var App = function (_React$Component) {
                     ),
                     React.createElement(
                         "div",
-                        { "class": "social-list" },
+                        { className: "social-list" },
                         React.createElement(
                             "button",
-                            { "class": "twitter" },
-                            React.createElement("i", { "class": "fa fa-twitter" })
+                            { className: "twitter" },
+                            React.createElement("i", { className: "fa fa-twitter" })
                         ),
                         React.createElement(
                             "button",
-                            { "class": "facebook" },
-                            React.createElement("i", { "class": "fa fa-facebook" })
+                            { className: "facebook" },
+                            React.createElement("i", { className: "fa fa-facebook" })
                         ),
                         React.createElement(
                             "button",
-                            { "class": "google-plus" },
-                            React.createElement("i", { "class": "fa fa-google-plus" })
+                            { className: "google-plus" },
+                            React.createElement("i", { className: "fa fa-google-plus" })
                         ),
                         React.createElement(
                             "button",
-                            { "class": "instagram" },
-                            React.createElement("i", { "class": "fa fa-instagram" })
+                            { className: "instagram" },
+                            React.createElement("i", { className: "fa fa-instagram" })
                         ),
                         React.createElement(
                             "button",
-                            { "class": "github" },
-                            React.createElement("i", { "class": "fa fa-github" })
+                            { className: "github" },
+                            React.createElement("i", { className: "fa fa-github" })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "specifiedFilter" },
+                        React.createElement(
+                            "h2",
+                            null,
+                            "Filter by:"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "Repositories"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "Stars"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "Followers"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "Following"
                         )
                     )
                 ),
