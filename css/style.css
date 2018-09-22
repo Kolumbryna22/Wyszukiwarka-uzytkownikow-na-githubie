@@ -47,7 +47,7 @@ input {
     border: 1px solid lightblue;
     padding: 5px;
     border-radius: 10px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     word-wrap: break-word; }
     .gallery-item a:hover {
       background-color: white; }
@@ -58,7 +58,7 @@ input {
   border: 2px solid #4099FF;
   border-radius: 15px;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
   padding: 15px 40px; }
   .twitter:hover {
     background-color: white;
@@ -71,7 +71,7 @@ input {
   border: 2px solid #3B5998;
   border-radius: 15px;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
   padding: 15px 40px; }
   .facebook:hover {
     background-color: white;
@@ -84,7 +84,7 @@ input {
   border: 2px solid #DB5A3C;
   border-radius: 15px;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
   padding: 15px 40px; }
   .google-plus:hover {
     background-color: white;
@@ -97,7 +97,7 @@ input {
   border: 2px solid #5C3D2E;
   border-radius: 15px;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
   padding: 15px 40px; }
   .instagram:hover {
     background-color: white;
@@ -110,7 +110,7 @@ input {
   border: 2px solid #4183C4;
   border-radius: 15px;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
   padding: 15px 40px; }
   .github:hover {
     background-color: white;

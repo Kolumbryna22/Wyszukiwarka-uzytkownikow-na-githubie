@@ -12,7 +12,7 @@ $font: 'Montserrat', sans-serif;
     border: 2px solid $back-color;
     border-radius: $radius;
     cursor: pointer;
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
     padding: 15px 40px;
   
     &:hover {
@@ -81,7 +81,7 @@ input {
         border: 1px solid lightblue;
         padding: 5px;
         border-radius: 10px;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         word-wrap: break-word;
         
         &:hover {
